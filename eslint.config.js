@@ -15,26 +15,32 @@ export default tseslint.config(
       ...tseslint.configs.recommended,
       react.configs.flat.recommended,
       jsxA11y.flatConfigs.recommended,
-      prettier
+      prettier,
     ],
     files: ["**/*.{ts,tsx}"],
     languageOptions: {
       ecmaVersion: 2020,
-      globals: globals.browser
+      globals: globals.browser,
     },
     plugins: {
       "react-hooks": reactHooks,
-      "react-refresh": reactRefresh
+      "react-refresh": reactRefresh,
     },
 
     rules: {
       ...reactHooks.configs.recommended.rules,
       "react-refresh/only-export-components": [
         "warn",
-        { allowConstantExport: true }
+        { allowConstantExport: true },
       ],
       "react/react-in-jsx-scope": ["off"],
-      "no-console": "warn"
-    }
+      "no-console": "warn",
+      "prettier/prettier": [
+        "error",
+        {
+          trailingComma: "es5",
+        },
+      ],
+    },
   }
 );
