@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.mouse--holded {
+  cursor: crosshair;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(100, 1fr);
+  grid-auto-rows: 1fr;
+  height: 100%;
+  width: 100%;
+}
+
+.cell {
+  background-color: transparent;
+  border: 1px solid #eee;
+  aspect-ratio: 1/1;
+}
+
+.context_menu {
+  position: absolute;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 8px;
+  min-width: 250px;
+  display: flex;
+  justify-content: space-around;
+  opacity: 0;
+  transform: scale(0.9);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  pointer-events: none;
+}
+
+.context_menu--showed {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+label {
+  padding: 8px;
+  aspect-ratio: 1/1;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+input[type="radio"] {
+  opacity: 0;
+}
