@@ -1,5 +1,6 @@
 {
   "name": "paint",
+  "homepage": "https://drodrigomoura.github.io/paint/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
