@@ -8,8 +8,6 @@ You can test the application online at the following URL:
 
 👉 [https://drodrigomoura.github.io/paint/](https://drodrigomoura.github.io/paint/)
 
-## Example in Action
-
 ## How to Install and Run Locally
 
 1. Clone this repository
